@@ -16,10 +16,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: Colors.green,
-        fontFamily: GoogleFonts.lato().fontFamily,
-        // primaryTextTheme: GoogleFonts.latoTextTheme()
-      ),
+          primarySwatch: Colors.green,
+          fontFamily: GoogleFonts.lato().fontFamily,
+          appBarTheme: AppBarTheme(
+            color: Colors.white,
+            elevation: 0.0,
+            iconTheme: IconThemeData(color: Colors.black),
+            // textTheme: ,    this text theme is deprecated now it is not used.
+            titleTextStyle: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+            ),
+          )
+
+          // primaryTextTheme: GoogleFonts.latoTextTheme()
+          ),
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(brightness: Brightness.dark),
       initialRoute: MyRoutes.homeRoute,

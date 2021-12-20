@@ -8,6 +8,8 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     var imageUrl =
         "https://lh3.googleusercontent.com/-WQjWp_czNd4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnWGoNCevwr_OD7LHBsUIVdbEgy5A/photo.jpg?sz=70";
+    var imageUrl1 =
+        "https://www.rcmbusiness.com/DefaultCaptcha/Generate?t=99491489500741d8bc7bf739fcc4677d&_multiple_=0";
     return Drawer(
       child: Container(
         color: Colors.green,
@@ -22,6 +24,7 @@ class MyDrawer extends StatelessWidget {
                     accountEmail: Text("rsumit@gmail.com"),
                     currentAccountPicture: CircleAvatar(
                       backgroundImage: NetworkImage(imageUrl),
+                      // backgroundImage: NetworkImage(imageUrl1),
                     )
                     // Image.network(imageUrl),  this gives image directly but if we want circular image see the uncommented code
                     )),
